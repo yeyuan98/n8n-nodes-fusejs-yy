@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-fusejs",
   "version": "0.1.0",
-  "description": "",
+  "description": "A fuse.js wrapper",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "David Davó",
+    "email": "david@ddavo.me"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/daviddavo/n8n-nodes-fusejs.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -38,7 +38,8 @@
     ],
     "nodes": [
       "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/HttpBin/HttpBin.node.js",
+      "dist/nodes/FuseJs/FuseJs.node.js"
     ]
   },
   "devDependencies": {
@@ -51,5 +52,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0"
   }
 }

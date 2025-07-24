@@ -1,0 +1,16 @@
+{
+	"node": {
+		"name": "FuseJs",
+		"displayName": "Fuse.js",
+		"icon": "file:logo.png",
+		"group": ["transform"],
+		"version": 1,
+		"description": "Fuzzy search using Fuse.js",
+		"defaults": {
+			"name": "Fuse.js"
+		},
+		"inputs": ["main"],
+		"outputs": ["main"],
+		"properties": []
+	}
+}
