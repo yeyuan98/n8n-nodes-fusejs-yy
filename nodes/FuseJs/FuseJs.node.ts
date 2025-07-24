@@ -52,7 +52,7 @@ export class FuseJs implements INodeType {
 		const returnData: INodeExecutionData[][] = [];
 
 		for (let i = 0; i < items.length; i++) {
-			const itemsJson = JSON.parse(this.getNodeParameter('items', i) as string);
+			const itemsJson = this.getNodeParameter('items', i) as any[];
 			const query = this.getNodeParameter('query', i) as string;
 			const keys = (this.getNodeParameter('keys', i) as string).split(',').map(key => key.trim()).filter(key => key.length > 0);
 			const options = JSON.parse(this.getNodeParameter('options', i) as unknown as string) as IFuseOptions<IDataObject>;
