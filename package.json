@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-fusejs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A fuse.js wrapper",
   "keywords": [
     "n8n-community-node-package"
