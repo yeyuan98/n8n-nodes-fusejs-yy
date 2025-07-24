@@ -2,7 +2,7 @@
 	"node": {
 		"name": "FuseJs",
 		"displayName": "Fuse.js",
-		"icon": "file:logo.png",
+		"icon": "file:logo.svg",
 		"group": ["transform"],
 		"version": 1,
 		"description": "Fuzzy search using Fuse.js",

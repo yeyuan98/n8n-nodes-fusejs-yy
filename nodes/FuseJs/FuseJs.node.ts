@@ -5,7 +5,7 @@ export class FuseJs implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Fuse.js',
 		name: 'fuseJs',
-		icon: 'file:logo.png',
+		icon: 'file:logo.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Fuzzy search using Fuse.js',
