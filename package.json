@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-fusejs",
+  "name": "n8n-nodes-fusejs-yy",
   "version": "0.2.0",
-  "description": "A fuse.js wrapper",
+  "description": "A fuse.js wrapper forked from daviddavo/n8n-nodes-fusejs",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "David Davó",
-    "email": "david@ddavo.me"
+    "name": "Ye Yuan",
+    "email": ""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/daviddavo/n8n-nodes-fusejs.git"
+    "url": "https://github.com/yeyuan98/n8n-nodes-fusejs-yy.git"
   },
   "engines": {
     "node": ">=20.15"
