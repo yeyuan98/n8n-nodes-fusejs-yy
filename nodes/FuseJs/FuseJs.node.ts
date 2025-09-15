@@ -49,7 +49,7 @@ export class FuseJs implements INodeType {
 
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		const items = this.getInputData();
-		const returnData: INodeExecutionData[][] = [];
+		const returnData: INodeExecutionData[] = [];
 
 		for (let i = 0; i < items.length; i++) {
 			const itemsJson = this.getNodeParameter('items', i) as any[];
@@ -73,11 +73,11 @@ export class FuseJs implements INodeType {
 			returnData.push(this.helpers.returnJsonArray(result.map((r: FuseResult<IDataObject>) => {
 				const output: IDataObject = {};
 				if (typeof r.item === 'object' && r.item !== null) {
-					Object.assign(output, r.item);
+					Object.assign(output, r.item[0]);
 				} else {
-					output.value = r.item as GenericValue;
+					output.value = r.item[0] as GenericValue;
 				}
-				output.score = r.score as GenericValue;
+				output.score = r.score[0] as GenericValue;
 				return output;
 			})));
 		}
